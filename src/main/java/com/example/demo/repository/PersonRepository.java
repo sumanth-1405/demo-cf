@@ -7,5 +7,6 @@ import com.example.demo.domain.Person;
 
 @Repository
 public interface PersonRepository extends CrudRepository<Person, Integer>{
-
+	
+	public Person findByPersonName(String string);
 }

@@ -22,4 +22,9 @@ public class PersonService {
 	public void savePerson(Person person) {
 		personRepo.save(person);
 	}
+	
+	public Person findByPersonName(String personName) {
+		Person person=personRepo.findByPersonName(personName);
+		return person;
+	}
 }
